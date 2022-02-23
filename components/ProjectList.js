@@ -8,7 +8,7 @@ export default function ProjectList() {
             className='flex align-middle'
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli'}
+            href={'https://www.lunarvim.org/'}
           >
             <div className='flex justify-start items-center'>
               <img
@@ -27,7 +27,7 @@ export default function ProjectList() {
             className='flex align-middle'
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli'}
+            href={'https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ'}
           >
             <div className='flex justify-start items-center'>
               <img
@@ -46,7 +46,7 @@ export default function ProjectList() {
             className='flex align-middle'
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli'}
+            href={'https://github.com/ChristianChiarulli/Bitcoin-FullNode-Setup'}
           >
             <div className='flex justify-start items-center'>
               <img
@@ -65,7 +65,7 @@ export default function ProjectList() {
             className='flex align-middle'
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli'}
+            href={'https://www.youtube.com/watch?v=ZZ5C2CILYhQ&list=PLhoH5vyxr6QoyW97O28uheczR07q9-OSl'}
           >
             <div className='flex justify-start items-center'>
               <img
@@ -84,7 +84,7 @@ export default function ProjectList() {
             className='flex align-middle'
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli'}
+            href={'https://github.com/ChristianChiarulli/intro-fullstack-ethereum'}
           >
             <div className='flex justify-start items-center'>
               <img
@@ -103,7 +103,7 @@ export default function ProjectList() {
             className='flex align-middle'
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli'}
+            href={'https://github.com/Mach-OS'}
           >
             <div className='flex justify-start items-center'>
               <img
@@ -122,7 +122,7 @@ export default function ProjectList() {
             className='flex align-middle'
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli'}
+            href={'https://github.com/ChristianChiarulli/website'}
           >
             <div className='flex justify-start items-center'>
               <img
