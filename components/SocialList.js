@@ -48,7 +48,7 @@ export default function SocialList() {
             className='flex align-middle'
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli'}
+            href={'https://www.youtube.com/chrisatmachine'}
           >
             <div className='flex justify-start items-center'>
               <FaYoutube
@@ -67,7 +67,7 @@ export default function SocialList() {
             className='flex align-middle'
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli'}
+            href={'https://twitter.com/chrisatmachine'}
           >
             <div className='flex justify-start items-center'>
               <FaTwitter
@@ -86,7 +86,7 @@ export default function SocialList() {
             className='flex align-middle'
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli'}
+            href={'https://discord.gg/Xb9B4Ny'}
           >
             <div className='flex justify-start items-center'>
               <FaDiscord
@@ -105,7 +105,7 @@ export default function SocialList() {
             className='flex align-middle'
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli'}
+            href={'https://www.patreon.com/chrisatmachine'}
           >
             <div className='flex justify-start items-center'>
               <FaPatreon
