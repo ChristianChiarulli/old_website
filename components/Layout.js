@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from './Header'
+import styles from '@/styles/components/Layout.module.css'
 
 export default function Layout({ title, keywords, description, children }) {
   return (
@@ -11,7 +12,7 @@ export default function Layout({ title, keywords, description, children }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <main className='bg-dark container flex-col mx-auto my-7'>
+      <main className={styles.main}>
         {children}
       </main>
     </div>

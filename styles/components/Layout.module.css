@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.75rem/* 28px */;
+  margin-bottom: 1.75rem/* 28px */;
+}
+
+@media (min-width: 640px) {
+  .main {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .main {
+    max-width: 1280px;
+  }
+}
