@@ -1,0 +1,13 @@
+
+.label {
+  font-size: 0.75rem/* 12px */;
+  line-height: 1rem/* 16px */;
+  padding-left: 0.5rem/* 8px */;
+  padding-right: 0.5rem/* 8px */;
+  padding-top: 0.25rem/* 4px */;
+  padding-bottom: 0.25rem/* 4px */;
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));
+  font-weight: 700;
+  border-radius: 0.25rem/* 4px */;
+}

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { COLOR_KEY } from '@/config/index'
+import styles from '@/styles/components/CategoryLabel.module.css'
 
 export default function CategoryLabel({ children }) {
   // TODO: refactor to use colors without tailwind
@@ -14,11 +15,8 @@ export default function CategoryLabel({ children }) {
     children = 'no topic'
   }
 
-
   return (
-    <div
-      className={`text-xs px-2 py-1  bg-${colorKey}-600 text-gray-100 font-bold rounded`}
-    >
+    <div className={styles.label} style={{ background: colorKey }}>
       <Link href={`/blog/category/${children.toLowerCase()}`}>{children}</Link>
     </div>
   )

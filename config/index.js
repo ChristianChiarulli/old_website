@@ -1,9 +1,9 @@
 export const POSTS_PER_PAGE = 6
 
 export const COLOR_KEY = {
-  JavaScript: 'yellow',
-  CSS: 'blue',
-  Python: 'green',
-  PHP: 'purple',
-  Ruby: 'red',
+  JavaScript: '#d97705',
+  CSS: '#3929eb',
+  Python: '#049669',
+  PHP: '#7730db',
+  Ruby: '#a70b34',
 }
