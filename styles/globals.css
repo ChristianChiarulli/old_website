@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2e3137;
+  box-shadow: inset 0 0 5px #4e5157;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  --tw-text-opacity: 1;
+  background: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.8;
+}
+
+.blog-text {
+  color: #abb2bf;
+	overflow-x: hidden !important;
+}
+
+.blog-text ul,
+ol {
+  font-size: 110%;
+  line-height: 2.3;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.blog-text pre {
+  --tw-text-opacity: 1;
+  background: rgba(55, 65, 81, var(--tw-text-opacity));
+  padding: 20px;
+  margin: 20px 0;
+  line-height: 2.3;
+  border-radius: 1.5rem;
+}
+
+.blog-text h1 {
+  font-size: 35px;
+}
+
+.blog-text h2,
+.blog-text h3,
+.blog-text h4 {
+  color: #d19a66;
+  font-size: 27px;
+}
+
+.f9 {
+  flex-grow: 7;
+}
+
+h1 {
+  color: #d19a66;
+}
+
+.bg-dark {
+  background-color: #1e2127;
+}
+
+/* TODO: fix everything above this*/
+
+
+
+body {
+	overflow-x: hidden !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: #1e2127;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.date {
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.post {
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  background-color: #1e2127;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  /* --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), */
+  /*   0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+  /* box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), */
+  /*   var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); */
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-body {
+  margin-top: 0.5rem;
+}
+
+.post-body a {
+  font-size: 1.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  --tw-text-opacity: 1;
+  color: rgba(209, 213, 219, var(--tw-text-opacity));
+  font-weight: 700;
+}
+
+.post-body p {
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+  /* margin-top: 0.5rem; */
+}
+
+.post-readmore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.post-readmore a {
+  --tw-text-opacity: 1;
+  color: rgba(209, 213, 219, var(--tw-text-opacity));
+}
+
+.post:hover .post-body a {
+  --tw-bg-opacity: 1;
+  color: rgba(99, 102, 241, var(--tw-bg-opacity));
+}
+
+.post:hover .post-readmore a:after {
+  /* content: ' »'; */
+  content: ' ➜';
+  --tw-bg-opacity: 1;
+  color: rgba(99, 102, 241, var(--tw-bg-opacity));
+  transition: 1s;
+}
+
+/* ProjectList */
+
+.project-icon {
+  width: 2rem;
+  max-height: 2.8rem;
+  margin-right: .4rem;
+}
+
+.project-icon-sm {
+  width: 2rem;
+  max-height: 2.8rem;
+  margin-right: .4rem;
+}
+
+/* TODO: fix everything below this*/
+
+/* @theme-color: #1e2127; */
+/* @text-color: #abb2bf; */
+
+/* Fix category colors in production */
+.bg-yellow-600 {
+  background-color: #d97705;
+}
+.bg-blue-600 {
+  background: #3929eb;
+}
+.bg-green-600 {
+  background-color: #049669;
+}
+.bg-purple-600 {
+  background-color: #7730db;
+}
+.bg-red-600 {
+  background-color: #a70b34;
+}
