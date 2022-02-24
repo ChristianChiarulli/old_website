@@ -1,33 +1,33 @@
 import fs from 'fs'
 import path from 'path'
-import Link from 'next/link'
 import Layout from '@/components/Layout'
 import Post from '@/components/Post'
 import CategoryList from '@/components/CategoryList'
 import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
+import styles from '@/styles/category/category_name.module.css'
 
 export default function CategoryBlogPage({ posts, categoryName, categories }) {
   return (
     <Layout>
-      <div className='flex justify-between'>
-        <div className='w-3/4 mr-10'>
-          <h1 className='text-5xl border-b-4 border-gray-700 p-5 font-bold'>
+      <div className={styles.categorypage}>
+        <div className={styles.categorypage__container}>
+          <h1 className={styles.categorypage__title}>
             Posts in {categoryName}
           </h1>
 
-          <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-5'>
+          <div className={styles.categorypage__posts}>
             {posts.map((post, index) => (
               <Post key={index} post={post} />
             ))}
           </div>
         </div>
-
-        <div className='flex-col'>
-          <div className='flex-shrink-0 justify-end mx-1 my flex-col'>
-            <CategoryList title='ALL TOPICS' categories={categories} />
-          </div>
-        </div>
+        {/* TODO: improve all topics section*/}
+        {/* <div className='flex-col'> */}
+        {/* <div className='flex-wrap flex-shrink-0 justify-end mx-1 my flex-col'> */}
+        <CategoryList title='ALL TOPICS' categories={categories} />
+        {/* </div> */}
+        {/* </div> */}
       </div>
     </Layout>
   )
