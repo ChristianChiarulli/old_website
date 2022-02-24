@@ -6,7 +6,7 @@ import Pagination from '@/components/Pagination'
 import CategoryList from '@/components/CategoryList'
 import { POSTS_PER_PAGE } from '@/config/index'
 import { getPosts } from '@/lib/posts'
-import styles from '@/styles/page/page_index.module.css'
+import styles from '@/styles/blog/page/page_index.module.css'
 
 export default function BlogPage({ posts, numPages, currentPage, categories }) {
   return (

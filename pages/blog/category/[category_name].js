@@ -5,7 +5,7 @@ import Post from '@/components/Post'
 import CategoryList from '@/components/CategoryList'
 import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
-import styles from '@/styles/category/category_name.module.css'
+import styles from '@/styles/blog/category/category_name.module.css'
 
 export default function CategoryBlogPage({ posts, categoryName, categories }) {
   return (
