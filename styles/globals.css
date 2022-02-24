@@ -1,6 +1,25 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	overflow-x: hidden !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: #1e2127;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -26,39 +45,6 @@ p {
   line-height: 1.8;
 }
 
-.blog-text {
-  color: #abb2bf;
-	overflow-x: hidden !important;
-}
-
-.blog-text ul,
-ol {
-  font-size: 110%;
-  line-height: 2.3;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.blog-text pre {
-  --tw-text-opacity: 1;
-  background: rgba(55, 65, 81, var(--tw-text-opacity));
-  padding: 20px;
-  margin: 20px 0;
-  line-height: 2.3;
-  border-radius: 1.5rem;
-}
-
-.blog-text h1 {
-  font-size: 35px;
-}
-
-.blog-text h2,
-.blog-text h3,
-.blog-text h4 {
-  color: #d19a66;
-  font-size: 27px;
-}
-
 .f9 {
   flex-grow: 7;
 }
@@ -70,23 +56,6 @@ h1 {
 .bg-dark {
   background-color: #1e2127;
 }
-
-/* TODO: fix everything above this*/
-
-
-
-body {
-	overflow-x: hidden !important;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  background: #1e2127;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100vw;
-}
-
 
 .container {
   width: 100%;
