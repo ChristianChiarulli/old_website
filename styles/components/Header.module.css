@@ -59,7 +59,7 @@
 }
 
 .nav__search {
-  visibility: hidden;
+  display: none;
 }
 
 .nav__item:hover {
@@ -94,7 +94,7 @@
     max-width: 984px;
   }
   .nav__search {
-    visibility: visible;
+    display: block;
   }
 }
 
@@ -109,3 +109,4 @@
     max-width: 1240;
   }
 }
+

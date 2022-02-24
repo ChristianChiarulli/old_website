@@ -1,5 +1,4 @@
 .sociallist {
-  margin-left: 1.75rem /* 28px */;
   width: 18rem /* 288px */;
 }
 
@@ -15,6 +14,7 @@
 
 .sociallist__item {
   display: flex;
+  margin-left: 0.25rem/* 4px */;
   vertical-align: middle;
   justify-content: flex-start;
   align-items: center;

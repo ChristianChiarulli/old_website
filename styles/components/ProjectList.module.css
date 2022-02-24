@@ -1,6 +1,5 @@
 .projectlist {
-  margin-left: 1.75rem /* 28px */;
-  width: 18rem /* 288px */;
+  width: 16rem /* 288px */;
 }
 
 .projectlist__title {
@@ -14,6 +13,7 @@
 }
 
 .projectlist__item {
+  margin-left: 0.25rem/* 4px */;
   display: flex;
   vertical-align: middle;
   justify-content: flex-start;

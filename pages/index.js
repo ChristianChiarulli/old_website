@@ -6,6 +6,7 @@ import CategoryList from '@/components/CategoryList'
 import SocialList from '@/components/SocialList'
 import ProjectList from '@/components/ProjectList'
 import styles from '@/styles/home.module.css'
+import Search from '@/components/Search'
 
 export default function HomePage({ posts }) {
   return (
@@ -24,6 +25,9 @@ export default function HomePage({ posts }) {
                 to everything I do on the internet.
               </p>
             </div>
+          </div>
+          <div className={styles.home__search}>
+            <Search />
           </div>
           <div className={styles.home__post__container}>
             <div>
