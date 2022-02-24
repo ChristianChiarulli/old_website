@@ -24,17 +24,15 @@ export default function Header() {
           {/* TODO: donate page */}
           {/* TODO: contact page */}
           <Link href='/donate'>
-            <a className={styles.nav__item}>
-              Donate
-            </a>
+            <a className={styles.nav__item}>Donate</a>
           </Link>
           <Link href='/contact'>
-            <a className={styles.nav__item}>
-              Contact
-            </a>
+            <a className={styles.nav__item}>Contact</a>
           </Link>
         </div>
-        <Search />
+        <div className={styles.nav__search}>
+          <Search />
+        </div>
       </nav>
     </header>
   )
