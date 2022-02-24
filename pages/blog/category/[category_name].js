@@ -23,6 +23,7 @@ export default function CategoryBlogPage({ posts, categoryName, categories }) {
           </div>
         </div>
         {/* TODO: improve all topics section*/}
+        {/* TODO: add pagination*/}
         {/* <div className='flex-col'> */}
         {/* <div className='flex-wrap flex-shrink-0 justify-end mx-1 my flex-col'> */}
         <CategoryList title='ALL TOPICS' categories={categories} />

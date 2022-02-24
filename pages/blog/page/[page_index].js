@@ -6,17 +6,16 @@ import Pagination from '@/components/Pagination'
 import CategoryList from '@/components/CategoryList'
 import { POSTS_PER_PAGE } from '@/config/index'
 import { getPosts } from '@/lib/posts'
+import styles from '@/styles/page/page_index.module.css'
 
 export default function BlogPage({ posts, numPages, currentPage, categories }) {
   return (
     <Layout>
-      <div className='flex justify-between flex-col md:flex-row'>
-        <div className='w-3/4 mr-10'>
-          <h1 className='text-5xl border-b-4 border-gray-700 p-5 font-bold'>
-            Articles
-          </h1>
+      <div className={styles.pageindex}>
+        <div className={styles.pageindex__container}>
+          <h1 className={styles.pageindex__title}>Articles</h1>
 
-          <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-5'>
+          <div className={styles.pageindex__posts}>
             {posts.map((post, index) => (
               <Post key={index} post={post} />
             ))}
@@ -25,11 +24,11 @@ export default function BlogPage({ posts, numPages, currentPage, categories }) {
           <Pagination currentPage={currentPage} numPages={numPages} />
         </div>
 
-        <div className='flex-col'>
-          <div className='flex-shrink-0 justify-end mx-1 my flex-col'>
+        {/* <div className='flex-col'> */}
+          {/* <div className='flex-shrink-0 justify-end mx-1 my flex-col'> */}
             <CategoryList title='ALL TOPICS' categories={categories} />
-          </div>
-        </div>
+          {/* </div> */}
+        {/* </div> */}
       </div>
     </Layout>
   )

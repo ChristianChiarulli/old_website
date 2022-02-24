@@ -1,0 +1,36 @@
+.pageindex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageindex__container {
+  width: 75%;
+  margin-right: 2.5rem/* 40px */;
+}
+
+.pageindex__title {
+  font-size: 3rem/* 48px */;
+  line-height: 1;
+  border-bottom-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgba(55, 65, 81, var(--tw-border-opacity));
+  padding: 1.25rem/* 20px */;
+  font-weight: 700;
+}
+
+.pageindex__posts {
+  display: grid;
+  gap: 1.25rem/* 20px */;
+}
+
+@media (min-width: 768px) {
+  .pageindex__posts {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .pageindex__posts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
