@@ -1,0 +1,37 @@
+.sociallist {
+  margin-left: 1.75rem /* 28px */;
+  width: 18rem /* 288px */;
+}
+
+.sociallist__title {
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+  margin-left: 0.25rem/* 4px */;
+  margin-right: 0.25rem/* 4px */;
+  padding-top: 1.25rem/* 20px */;
+  padding-bottom: 0.5rem/* 8px */;
+  font-weight: 700;
+}
+
+.sociallist__item {
+  display: flex;
+  vertical-align: middle;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sociallist__name {
+  font-size: 1.125rem/* 18px */;
+  line-height: 1.75rem/* 28px */;
+  --tw-text-opacity: 1;
+  color: rgba(209, 213, 219, var(--tw-text-opacity));
+  padding: 0.5rem/* 8px */;
+  cursor: pointer;
+}
+
+.sociallist__name:hover {
+  --tw-text-opacity: 1;
+  color: rgba(165, 180, 252, var(--tw-text-opacity));
+}
+
+

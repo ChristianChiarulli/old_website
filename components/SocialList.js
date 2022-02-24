@@ -5,104 +5,80 @@ import {
   FaPatreon,
   FaTwitter,
 } from 'react-icons/fa'
+import styles from '@/styles/components/SocialList.module.css'
 
 // TODO: maybe add rss, maybe remove linkedin
 // TODO: refactor into smaller components
 
 export default function SocialList() {
   return (
-    <div className='ml-7 w-72'>
-      <h1 className='text-xl mx-1 pt-5 pb-2 font-bold'>SOCIAL</h1>
-      <ul className=''>
-        {/* <a href='http://youtube.com'> */}
-        {/*   <li className='p-2 cursor-pointer hover:text-indigo-300'>Youtube</li> */}
-        {/* </a> */}
-        {/* <a href='youtube.com'> */}
-        {/*   <li className='text-lg text-indigo-300 p-2 cursor-pointer hover:text-indigo-300'> */}
-        {/*     Twitter */}
-        {/*   </li> */}
-        {/* </a> */}
-
+    <div className={styles.sociallist}>
+      <h1 className={styles.sociallist__title}>SOCIAL</h1>
+      <ul>
         <li>
           <a
-            className='flex align-middle'
+            className={styles.sociallist__item}
             target='_blank'
             rel='nofollow noopener noreferrer'
             href={'https://github.com/ChristianChiarulli'}
           >
-            <div className='flex justify-start items-center'>
-              <FaGithub
-                color='#FFFFFF'
-                // color='#f34f29'
-                size='30'
-                style={{ marginRight: '.4rem' }}
-              />
-              <span className='text-lg text-gray-300 p-2 cursor-pointer hover:text-indigo-300'>
-                Github
-              </span>
-            </div>
+            <FaGithub
+              color='#FFFFFF'
+              // color='#f34f29'
+              size='30'
+              style={{ marginRight: '.4rem' }}
+            />
+            <span className={styles.sociallist__name}>Github</span>
           </a>
         </li>
         <li>
           <a
-            className='flex align-middle'
+            className={styles.sociallist__item}
             target='_blank'
             rel='nofollow noopener noreferrer'
             href={'https://www.youtube.com/chrisatmachine'}
           >
-            <div className='flex justify-start items-center'>
-              <FaYoutube
-                color='#FE0000'
-                size='30'
-                style={{ marginRight: '.4rem' }}
-              />
-              <span className='text-lg text-gray-300 p-2 cursor-pointer hover:text-indigo-300'>
-                Youtube
-              </span>
-            </div>
+            <FaYoutube
+              color='#FE0000'
+              size='30'
+              style={{ marginRight: '.4rem' }}
+            />
+            <span className={styles.sociallist__name}>Youtube</span>
           </a>
         </li>
         <li>
           <a
-            className='flex align-middle'
+            className={styles.sociallist__item}
             target='_blank'
             rel='nofollow noopener noreferrer'
             href={'https://twitter.com/chrisatmachine'}
           >
-            <div className='flex justify-start items-center'>
-              <FaTwitter
-                color='#1c9bf0'
-                size='30'
-                style={{ marginRight: '.4rem' }}
-              />
-              <span className='text-lg text-gray-300 p-2 cursor-pointer hover:text-indigo-300'>
-                Twitter
-              </span>
-            </div>
+            <FaTwitter
+              color='#1c9bf0'
+              size='30'
+              style={{ marginRight: '.4rem' }}
+            />
+            <span className={styles.sociallist__name}>Twitter</span>
           </a>
         </li>
         <li>
           <a
-            className='flex align-middle'
+            className={styles.sociallist__item}
             target='_blank'
             rel='nofollow noopener noreferrer'
             href={'https://discord.gg/Xb9B4Ny'}
           >
-            <div className='flex justify-start items-center'>
-              <FaDiscord
-                color='#7289dc'
-                size='30'
-                style={{ marginRight: '.4rem' }}
-              />
-              <span className='text-lg text-gray-300 p-2 cursor-pointer hover:text-indigo-300'>
-                Discord
-              </span>
-            </div>
+            <FaDiscord
+              color='#7289dc'
+              size='30'
+              style={{ marginRight: '.4rem' }}
+            />
+            <span className={styles.sociallist__name}>Discord</span>
           </a>
         </li>
         <li>
           <a
-            className='flex align-middle'
+            className={styles.sociallist__item}
             target='_blank'
             rel='nofollow noopener noreferrer'
             href={'https://www.patreon.com/chrisatmachine'}
@@ -113,9 +89,7 @@ export default function SocialList() {
                 size='30'
                 style={{ marginRight: '.4rem' }}
               />
-              <span className='text-lg text-gray-300 p-2 cursor-pointer hover:text-indigo-300'>
-                Patreon
-              </span>
+              <span className={styles.sociallist__name}>Patreon</span>
             </div>
           </a>
         </li>
