@@ -7,8 +7,7 @@ import {
 } from 'react-icons/fa'
 import styles from '@/styles/components/SocialList.module.css'
 
-// TODO: maybe add rss, maybe remove linkedin
-// TODO: refactor into smaller components
+// TODO: maybe add rss
 
 export default function SocialList() {
   return (
