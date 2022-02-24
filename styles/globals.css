@@ -127,24 +127,3 @@ body {
   --tw-text-opacity: 1;
   color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
-
-
-/* ProjectList */
-
-.project-icon {
-  width: 2rem;
-  max-height: 2.8rem;
-  margin-right: .4rem;
-}
-
-.project-icon-sm {
-  width: 2rem;
-  max-height: 2.8rem;
-  margin-right: .4rem;
-}
-
-/* TODO: fix everything below this*/
-
-/* @theme-color: #1e2127; */
-/* @text-color: #abb2bf; */
-
