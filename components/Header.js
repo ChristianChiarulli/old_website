@@ -23,11 +23,16 @@ export default function Header() {
           </Link>
           {/* TODO: donate page */}
           {/* TODO: contact page */}
-          {/* <Link href='/donate'> */}
-          {/*   <a className='mx-5 cursor-pointer uppercase hover:text-indigo-300'> */}
-          {/*     Donate */}
-          {/*   </a> */}
-          {/* </Link> */}
+          <Link href='/donate'>
+            <a className={styles.nav__item}>
+              Donate
+            </a>
+          </Link>
+          <Link href='/contact'>
+            <a className={styles.nav__item}>
+              Contact
+            </a>
+          </Link>
         </div>
         <Search />
       </nav>

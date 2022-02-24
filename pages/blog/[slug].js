@@ -6,6 +6,7 @@ import marked from 'marked'
 import Layout from '@/components/Layout'
 import CategoryLabel from '@/components/CategoryLabel'
 import styles from '@/styles/blog/slug.module.css'
+import markdownStyles from '@/styles/blog/markdown.module.css'
 
 // TODO: style this markdown
 
@@ -35,7 +36,7 @@ export default function PostPage({
           {/* </div> */}
         {/* </div> */}
 
-        <div className={styles.article__content}>
+        <div className={markdownStyles.markdown__body}>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
         <div className='date'>{date}</div>

@@ -4,6 +4,7 @@ import {
   FaDiscord,
   FaPatreon,
   FaTwitter,
+  FaHeart,
 } from 'react-icons/fa'
 import styles from '@/styles/components/SocialList.module.css'
 
@@ -90,6 +91,22 @@ export default function SocialList() {
             <span className={styles.sociallist__name}>Patreon</span>
           </a>
         </li>
+        <li>
+          <a
+            className={styles.sociallist__item}
+            target='_blank'
+            rel='nofollow noopener noreferrer'
+            href={'https://github.com/sponsors/ChristianChiarulli'}
+          >
+            <FaHeart
+              color='#EB48AB'
+              size='30'
+              style={{ marginRight: '.4rem' }}
+            />
+            <span className={styles.sociallist__name}>Sponsor</span>
+          </a>
+        </li>
+
       </ul>
     </div>
   )
