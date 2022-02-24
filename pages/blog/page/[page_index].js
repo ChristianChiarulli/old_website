@@ -25,9 +25,9 @@ export default function BlogPage({ posts, numPages, currentPage, categories }) {
         </div>
 
         {/* <div className='flex-col'> */}
-          {/* <div className='flex-shrink-0 justify-end mx-1 my flex-col'> */}
-            <CategoryList title='ALL TOPICS' categories={categories} />
-          {/* </div> */}
+        {/* <div className='flex-shrink-0 justify-end mx-1 my flex-col'> */}
+        <CategoryList title='ALL TOPICS' categories={categories} />
+        {/* </div> */}
         {/* </div> */}
       </div>
     </Layout>
