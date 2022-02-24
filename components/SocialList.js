@@ -82,14 +82,12 @@ export default function SocialList() {
             rel='nofollow noopener noreferrer'
             href={'https://www.patreon.com/chrisatmachine'}
           >
-            <div className='flex justify-start items-center'>
-              <FaPatreon
-                color='#E8715C'
-                size='30'
-                style={{ marginRight: '.4rem' }}
-              />
-              <span className={styles.sociallist__name}>Patreon</span>
-            </div>
+            <FaPatreon
+              color='#E8715C'
+              size='30'
+              style={{ marginRight: '.4rem' }}
+            />
+            <span className={styles.sociallist__name}>Patreon</span>
           </a>
         </li>
       </ul>
