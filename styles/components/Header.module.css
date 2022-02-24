@@ -2,14 +2,11 @@
   --tw-text-opacity: 1;
   color: rgba(243, 244, 246, var(--tw-text-opacity));
   width: 100%;
-  padding-top: 1.75rem /* 28px */;
-}
-
-.header {
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
   padding: 1.25rem /* 20px */;
+  padding-top: 4rem /* 28px */;
   flex-direction: column;
   align-items: center;
 }

@@ -1,0 +1,23 @@
+.searchresults {
+  position: absolute;
+  top: 5rem/* 80px */;
+  z-index: 10;
+  --tw-border-opacity: 1;
+  border-color: rgba(55, 65, 81, var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(229, 231, 235, var(--tw-text-opacity));
+  width: 100%;
+  border-radius: 1rem/* 16px */;
+}
+
+.searchresults__container {
+  padding: 0.75rem/* 12px */;
+}
+
+.searchresults__count {
+  font-size: 1.5rem/* 24px */;
+  line-height: 2rem/* 32px */;
+  margin-bottom: 0.75rem/* 12px */;
+}

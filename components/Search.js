@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import SearchResults from './SearchResults'
+import styles from '@/styles/components/Search.module.css'
 
 export default function Search() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -21,21 +22,21 @@ export default function Search() {
   }, [searchTerm])
 
   return (
-    <div className='relative '>
-      <div className='container mx-auto flex items-center justify-center md:justify-end'>
-        <div className='relative text-gray-200 w-72'>
+    <div className={styles.search__wrapper}>
+      <div className={styles.search__container}>
+        <div className={styles.search__input}>
           <form>
             <input
               type='search'
               name=''
               id=''
-              className='bg-gray-700 h-10 px-5 pr-10 rounded-full text-sm focus:outline-none w-72'
+              className={styles.search__form}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder='Search Posts...'
             />
 
-            <FaSearch className='absolute top-0 right-0 text-gray-300 mt-3 mr-4' />
+            <FaSearch className={styles.search__icon} />
           </form>
         </div>
       </div>
