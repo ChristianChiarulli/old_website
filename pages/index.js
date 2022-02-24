@@ -41,7 +41,7 @@ export default function HomePage({ posts }) {
             </div>
           </div>
         </div>
-        <div>
+        <div className={styles.home__sidebar__container}>
           <CategoryList
             title='FEATURED TOPICS'
             categories={['Bitcoin', 'Ethereum', 'Linux', 'Neovim']}

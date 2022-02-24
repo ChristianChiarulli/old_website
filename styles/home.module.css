@@ -1,8 +1,8 @@
 .home__container {
   display: flex;
   position: relative;
-  padding-top: 1rem/* 16px */;
-  padding-bottom: 1rem/* 16px */;
+  padding-top: 1rem /* 16px */;
+  padding-bottom: 1rem /* 16px */;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -10,62 +10,37 @@
   justify-content: space-between;
 }
 
-@media (min-width: 640px) {
-  .home__container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .home__container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .home__container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .home__container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .home__container {
-    max-width: 1280px;
-  }
-}
+/* @media (min-width: 1536px) { */
+/*   .home__container { */
+/*     max-width: 1280px; */
+/*   } */
+/* } */
 
 .home__image__container {
   display: flex;
-  padding-left: 1.25rem/* 40px */;
-  padding-right: 2.5rem/* 40px */;
+  padding-left: 1.25rem /* 40px */;
+  padding-right: 2.5rem /* 40px */;
   width: 40rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgba(45, 55, 71, var(--tw-bg-opacity));
   border-radius: 1.5rem;
   margin-left: 2.5rem;
-
 }
 
 .home__image {
-  width: 10rem/* 160px */;
+  width: 10rem /* 160px */;
   border-radius: 9999px;
 }
 
 .home__intro {
-  padding: 0.75rem/* 12px */;
+  padding: 0.75rem /* 12px */;
   margin-left: 2rem;
-  border-radius: 1rem/* 16px */;
+  border-radius: 1rem /* 16px */;
   --tw-text-opacity: 1;
   color: rgba(229, 231, 235, var(--tw-text-opacity));
-  width: 28rem/* 288px */;
+  width: 28rem /* 288px */;
   font-size: 1.2rem;
 }
 
@@ -76,11 +51,11 @@
 }
 
 .home__post__title {
-  font-size: 1.25rem/* 20px */;
-  line-height: 1.75rem/* 28px */;
-  padding-top: 4.5rem/* 80px */;
-  padding-left: 2.5rem/* 40px */;
-  padding-right: 2.5rem/* 40px */;
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+  padding-top: 4.5rem /* 80px */;
+  padding-left: 2.5rem /* 40px */;
+  padding-right: 2.5rem /* 40px */;
   font-weight: 700;
 }
 
@@ -91,14 +66,14 @@
 }
 
 .home__post__button__wrapper {
-  padding-left: 2rem/* 32px */;
-  padding-right: 2rem/* 32px */;
+  padding-left: 2rem /* 32px */;
+  padding-right: 2rem /* 32px */;
 }
 
 .home__post__button {
   display: block;
-  padding-left: 2.5rem/* 40px */;
-  padding-right: 2.5rem/* 40px */;
+  padding-left: 2.5rem /* 40px */;
+  padding-right: 2.5rem /* 40px */;
   text-align: center;
   cursor: pointer;
   border-width: 1px;
@@ -107,12 +82,13 @@
   border-color: rgba(55, 65, 81, var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgba(229, 231, 235, var(--tw-text-opacity));
-  border-radius: 0.375rem/* 6px */;
-  padding-top: 1rem/* 16px */;
-  padding-bottom: 1rem/* 16px */;
-  margin-top: 1.25rem/* 20px */;
-  margin-bottom: 1.25rem/* 20px */;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  border-radius: 0.375rem /* 6px */;
+  padding-top: 1rem /* 16px */;
+  padding-bottom: 1rem /* 16px */;
+  margin-top: 1.25rem /* 20px */;
+  margin-bottom: 1.25rem /* 20px */;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
   user-select: none;
@@ -147,7 +123,35 @@
 .home__sidebar__container {
   flex-shrink: 0;
   justify-content: flex-end;
-  margin-left: 0.25rem/* 4px */;
-  margin-right: 0.25rem/* 4px */;
+  margin-left: 0.25rem /* 4px */;
+  margin-right: 0.25rem /* 4px */;
   flex-direction: column;
+  visibility: hidden;
+}
+
+@media (min-width: 640px) {
+  .home__container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home__container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home__container {
+    max-width: 1024px;
+  }
+  .home__sidebar__container {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1280px) {
+  .home__container {
+    max-width: 1280px;
+  }
 }
