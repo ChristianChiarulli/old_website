@@ -11,18 +11,20 @@ export default function HomePage({ posts }) {
   return (
     <Layout>
       <div className={styles.home__container}>
-        <div className={styles.home__image__container}>
-          <img
-            className={styles.home__image}
-            src='/site/me.jpg'
-            alt='LunarVim'
-          />
-        </div>
-        <div>
-          <p className={styles.home__intro}>
-            Hey I'm Chris, This is where I keep all of my thoughts and links to
-            everything I do on the internet.
-          </p>
+        <div className={styles.test}>
+          <div className={styles.home__image__container}>
+            <img
+              className={styles.home__image}
+              src='/site/me.jpg'
+              alt='LunarVim'
+            />
+          </div>
+          <div>
+            <p className={styles.home__intro}>
+              Hey I'm Chris, This is where I keep all of my thoughts and links
+              to everything I do on the internet.
+            </p>
+          </div>
         </div>
       </div>
       <div className={styles.home__post__container}>

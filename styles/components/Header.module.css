@@ -23,31 +23,31 @@
 
 @media (min-width: 640px) {
   .header {
-    max-width: 640px;
+    max-width: 600px;
   }
 }
 
 @media (min-width: 768px) {
   .header {
-    max-width: 768px;
+    max-width: 728px;
   }
 }
 
 @media (min-width: 1024px) {
   .header {
-    max-width: 1024px;
+    max-width: 984px;
   }
 }
 
 @media (min-width: 1280px) {
   .header {
-    max-width: 1280px;
+    max-width: 1240px;
   }
 }
 
 @media (min-width: 1536px) {
   .header {
-    max-width: 1280px;
+    max-width: 1240;
   }
 }
 

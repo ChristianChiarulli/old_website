@@ -1,6 +1,6 @@
 .list {
   margin-left: 1.75rem/* 28px */;
-  width: 18rem/* 288px */;
+  width: 16rem/* 288px */;
 }
 
 .list__title {
@@ -8,7 +8,7 @@
   line-height: 1.75rem/* 28px */;
   margin-left: 0.25rem/* 4px */;
   margin-right: 0.25rem/* 4px */;
-  padding-top: 5rem/* 80px */;
+  padding-top: 2.5rem/* 80px */;
   padding-bottom: 0.5rem/* 8px */;
   font-weight: 700;
 }
