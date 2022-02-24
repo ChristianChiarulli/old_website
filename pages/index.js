@@ -18,28 +18,28 @@ export default function HomePage({ posts }) {
               src='/site/me.jpg'
               alt='LunarVim'
             />
-          </div>
-          <div>
-            <p className={styles.home__intro}>
-              Hey I'm Chris, This is where I keep all of my thoughts and links
-              to everything I do on the internet.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className={styles.home__post__container}>
-        <div>
-          <h1 className={styles.home__post__title}>RECENTLY PUBLISHED</h1>
-          <div className={styles.home__post__list}>
-            {posts.map((post, index) => (
-              <Post key={index} post={post} />
-            ))}
-          </div>
-          <Link href='/blog'>
-            <div className={styles.home__post__button__wrapper}>
-              <a className={styles.home__post__button}>All Posts</a>
+            <div>
+              <p className={styles.home__intro}>
+                Hey I'm Chris, This is where I keep all of my thoughts and links
+                to everything I do on the internet.
+              </p>
             </div>
-          </Link>
+          </div>
+          <div className={styles.home__post__container}>
+            <div>
+              <h1 className={styles.home__post__title}>RECENTLY PUBLISHED</h1>
+              <div className={styles.home__post__list}>
+                {posts.map((post, index) => (
+                  <Post key={index} post={post} />
+                ))}
+              </div>
+              <Link href='/blog'>
+                <div className={styles.home__post__button__wrapper}>
+                  <a className={styles.home__post__button}>All Posts</a>
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
         <div>
           <CategoryList
