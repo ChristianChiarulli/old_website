@@ -403,7 +403,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* tailwind preflight end */
 
 body {
-  /* overflow-x: hidden !important; */
+  overflow-x: hidden !important;
+  overflow: auto;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
@@ -412,7 +413,6 @@ body {
   background-attachment: fixed;
   height: 100vh;
   /* width: 100vw; */
-  /* min-width: 768px; */
 }
 
 /* width */

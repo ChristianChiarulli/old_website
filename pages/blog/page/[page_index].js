@@ -7,13 +7,17 @@ import CategoryList from '@/components/CategoryList'
 import { POSTS_PER_PAGE } from '@/config/index'
 import { getPosts } from '@/lib/posts'
 import styles from '@/styles/blog/page/page_index.module.css'
+import Search from '@/components/Search'
 
 export default function BlogPage({ posts, numPages, currentPage, categories }) {
   return (
     <Layout>
       <div className={styles.pageindex}>
+        <div className={styles.search}>
+          <Search />
+        </div>
         <div className={styles.pageindex__container}>
-          <h1 className={styles.pageindex__title}>Articles</h1>
+          <h1 className={styles.pageindex__title}>ARTICLES</h1>
 
           <div className={styles.pageindex__posts}>
             {posts.map((post, index) => (

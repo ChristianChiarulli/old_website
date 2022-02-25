@@ -10,11 +10,10 @@ export default function Layout({ title, keywords, description, children }) {
         <meta name='keywords' content={keywords} />
         <meta name='description' content={description} />
         <link rel='icon' href='/favicon.ico' />
+        {/* <meta name='viewport' content='width=device-width, initial-scale=1.0' /> */}
       </Head>
       <Header />
-      <main className={styles.main}>
-        {children}
-      </main>
+      <main className={styles.main}>{children}</main>
     </div>
   )
 }

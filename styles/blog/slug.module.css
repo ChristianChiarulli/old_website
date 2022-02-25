@@ -1,19 +1,17 @@
 .article {
   width: 100%;
-  padding-left: 2.5rem/* 40px */;
-  padding-right: 2.5rem/* 40px */;
-  padding-top: 1.5rem/* 24px */;
-  padding-bottom: 1.5rem/* 24px */;
-  border-radius: 0.5rem/* 8px */;
-  margin-top: 1.5rem/* 24px */;
-  padding-bottom: 8rem/* 128px */;
 }
+
+.cover__image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
 
 .article__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem/* 16px */;
 }
 
 .article__title {

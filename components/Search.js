@@ -38,10 +38,9 @@ export default function Search() {
 
             <FaSearch className={styles.search__icon} />
           </form>
+          <SearchResults results={searchResults} />
         </div>
       </div>
-
-      <SearchResults results={searchResults} />
     </div>
   )
 }

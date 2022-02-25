@@ -1,25 +1,24 @@
 .search__wrapper {
-  position: relative;
+  padding-bottom: 2rem;
 }
 
 .search__container {
-  display: flex;
-  position: relative;
-  justify-content: center;
+  /* display: flex; */
+  /* position: relative; */
+  /* justify-content: center; */
 }
 
 .search__input {
   position: relative;
   --tw-text-opacity: 1;
   color: rgba(229, 231, 235, var(--tw-text-opacity));
-  width: 42rem;
+  width: 100%;
 }
 
 .search__form {
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
   height: 2.5rem;
-  margin-top: 1.5rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 2rem;
@@ -27,7 +26,7 @@
   border-radius: 9999px;
   font-size: 1.5rem;
   line-height: 1.25rem;
-  width: 42rem;
+  width: 100%;
 }
 
 .search__icon {
@@ -36,19 +35,31 @@
   right: 0px;
   --tw-text-opacity: 1;
   color: rgba(209, 213, 219, var(--tw-text-opacity));
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-right: 1.5rem;
 }
 
-@media (min-width: 640px) {
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
 }
 
-@media (min-width: 768px) {
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
 }
 
-@media (min-width: 1024px) {
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .main {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
   .search__wrapper {
     position: relative;
+    padding-bottom: 0rem;
   }
 
   .search__container {
@@ -108,5 +119,6 @@
   }
 }
 
-@media (min-width: 1280px) {
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
 }

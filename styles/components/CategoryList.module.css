@@ -3,12 +3,12 @@
 }
 
 .list__title {
-  font-size: 1.25rem/* 20px */;
-  line-height: 1.75rem/* 28px */;
-  margin-left: 0.25rem/* 4px */;
-  margin-right: 0.25rem/* 4px */;
-  padding-top: 1.25rem/* 20px */;
-  padding-bottom: 0.5rem/* 8px */;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0.5rem;
   font-weight: 700;
 }
 
@@ -20,19 +20,19 @@
 .list__element {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-  font-size: 0.875rem/* 14px */;
-  line-height: 1.25rem/* 20px */;
-  padding-left: 0.5rem/* 8px */;
-  padding-right: 0.5rem/* 8px */;
-  padding-top: 0.5rem/* 8px */;
-  padding-bottom: 0.5rem/* 8px */;
-  margin-left: 0.25rem/* 4px */;
-  margin-right: 0.25rem/* 4px */;
-  margin-top: 0.5rem/* 8px */;
-  margin-bottom: 0.5rem/* 8px */;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
-  border-radius: 0.5rem/* 8px */;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
