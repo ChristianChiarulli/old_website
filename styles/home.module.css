@@ -46,14 +46,14 @@
 }
 
 .home__post__button__wrapper {
-  padding-left: 2rem /* 32px */;
-  padding-right: 2rem /* 32px */;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .home__post__button {
   display: block;
-  padding-left: 2.5rem /* 40px */;
-  padding-right: 2.5rem /* 40px */;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   text-align: center;
   cursor: pointer;
   border-width: 1px;
@@ -62,11 +62,11 @@
   border-color: rgba(55, 65, 81, var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgba(229, 231, 235, var(--tw-text-opacity));
-  border-radius: 0.375rem /* 6px */;
-  padding-top: 1rem /* 16px */;
-  padding-bottom: 1rem /* 16px */;
-  margin-top: 1.25rem /* 20px */;
-  margin-bottom: 1.25rem /* 20px */;
+  border-radius: 0.375rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   transition-property: background-color, border-color, color, fill, stroke,
     opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -6,8 +6,15 @@ import CategoryList from '@/components/CategoryList'
 import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
 import styles from '@/styles/blog/category/category_name.module.css'
+import Pagination from '@/components/Pagination'
 
-export default function CategoryBlogPage({ posts, categoryName, categories }) {
+export default function CategoryBlogPage({
+  posts,
+  categoryName,
+  numPages,
+  currentPage,
+  categories,
+}) {
   return (
     <Layout>
       <div className={styles.categorypage}>
@@ -21,14 +28,12 @@ export default function CategoryBlogPage({ posts, categoryName, categories }) {
               <Post key={index} post={post} />
             ))}
           </div>
+
+          <Pagination currentPage={currentPage} numPages={numPages} />
         </div>
-        {/* TODO: improve all topics section*/}
-        {/* TODO: add pagination*/}
-        {/* <div className='flex-col'> */}
-        {/* <div className='flex-wrap flex-shrink-0 justify-end mx-1 my flex-col'> */}
-        <CategoryList title='ALL TOPICS' categories={categories} />
-        {/* </div> */}
-        {/* </div> */}
+        <div className={styles.sidebar__container}>
+          <CategoryList title='ALL TOPICS' categories={categories} />
+        </div>
       </div>
     </Layout>
   )
