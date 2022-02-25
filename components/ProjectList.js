@@ -103,21 +103,21 @@ export default function ProjectList() {
             <span className={styles.projectlist__name}>MachOS</span>
           </a>
         </li>
-        <li>
-          <a
-            className={styles.projectlist__item}
-            target='_blank'
-            rel='nofollow noopener noreferrer'
-            href={'https://github.com/ChristianChiarulli/website'}
-          >
-            <img
-              className={styles.projectlist__icon}
-              src='/icons/chrisatmachine.png'
-              alt='LunarVim'
-            />
-            <span className={styles.projectlist__name}>Website</span>
-          </a>
-        </li>
+        {/* <li> */}
+        {/*   <a */}
+        {/*     className={styles.projectlist__item} */}
+        {/*     target='_blank' */}
+        {/*     rel='nofollow noopener noreferrer' */}
+        {/*     href={'https://github.com/ChristianChiarulli/website'} */}
+        {/*   > */}
+        {/*     <img */}
+        {/*       className={styles.projectlist__icon} */}
+        {/*       src='/icons/chrisatmachine.png' */}
+        {/*       alt='LunarVim' */}
+        {/*     /> */}
+        {/*     <span className={styles.projectlist__name}>Website</span> */}
+        {/*   </a> */}
+        {/* </li> */}
       </ul>
     </div>
   )

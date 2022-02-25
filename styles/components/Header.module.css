@@ -160,7 +160,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     justify-content: flex-start;
   }
   .container {
@@ -171,8 +170,7 @@
   }
   .nav__search {
     display: block;
-
-  margin-left: auto;
+    margin-left: auto;
   }
   .nav__wrapper {
     display: flex;
@@ -191,4 +189,10 @@
   /*   padding-left: 15rem; */
   /*   padding-right: 15rem; */
   /* } */
+}
+
+@media only screen and (min-height: 1200px) {
+  .container {
+    padding-top: 4rem;
+  }
 }

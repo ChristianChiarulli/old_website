@@ -12,7 +12,7 @@ import Search from '@/components/Search'
 export default function BlogPage({ posts, numPages, currentPage, categories }) {
   return (
     <Layout>
-      <div className={styles.pageindex}>
+      <div className={styles.container}>
         <div className={styles.search}>
           <Search />
         </div>
@@ -28,11 +28,9 @@ export default function BlogPage({ posts, numPages, currentPage, categories }) {
           <Pagination currentPage={currentPage} numPages={numPages} />
         </div>
 
-        {/* <div className='flex-col'> */}
-        {/* <div className='flex-shrink-0 justify-end mx-1 my flex-col'> */}
-        <CategoryList title='ALL TOPICS' categories={categories} />
-        {/* </div> */}
-        {/* </div> */}
+        <div className={styles.sidebar__container}>
+          <CategoryList title='ALL TOPICS' categories={categories} />
+        </div>
       </div>
     </Layout>
   )

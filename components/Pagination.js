@@ -14,18 +14,18 @@ export default function Pagination({ currentPage, numPages }) {
       {!isFirst && (
         <Link href={prevPage}>
           <li className={styles.page__prev}>
-            Previous
+            Prev
           </li>
         </Link>
       )}
       {/* TODO: cut middle pagination and put ... in middle after unreasonable amount of numbers */}
-      {Array.from({ length: numPages }, (_, i) => (
-        <Link href={`/blog/page/${i + 1}`} key={`page-${i}`}>
-          <li className={styles.page__number}>
-            {i + 1}
-          </li>
-        </Link>
-      ))}
+      {/* {Array.from({ length: numPages }, (_, i) => ( */}
+      {/*   <Link href={`/blog/page/${i + 1}`} key={`page-${i}`}> */}
+      {/*     <li className={styles.page__number}> */}
+      {/*       {i + 1} */}
+      {/*     </li> */}
+      {/*   </Link> */}
+      {/* ))} */}
 
       {!isLast && (
         <Link href={nextPage}>

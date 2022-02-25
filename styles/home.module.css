@@ -92,14 +92,9 @@
   outline-offset: 2px;
 }
 
-.home__sidebar__container {
-  display: flex;
-  flex-shrink: 0;
-  justify-content: space-between;
-  margin-left: 0.25rem /* 4px */;
-  margin-right: 0.25rem /* 4px */;
-  flex-direction: column;
-}
+  .home__sidebar__container {
+    display: none;
+  }
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
@@ -125,7 +120,6 @@
   .home__sidebar__container {
     display: flex;
     flex-shrink: 0;
-    justify-content: center;
     align-items: center;
     margin-left: 0.25rem /* 4px */;
     margin-right: 0.25rem /* 4px */;
@@ -137,3 +131,4 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
 }
+

@@ -45,3 +45,9 @@
   /*   padding-right: 15rem; */
   /* } */
 }
+
+@media only screen and (min-height: 1200px) {
+  .main {
+    padding-top: 7rem;
+  }
+}
