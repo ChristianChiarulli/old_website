@@ -98,7 +98,7 @@
   justify-content: space-between;
   margin-left: 0.25rem /* 4px */;
   margin-right: 0.25rem /* 4px */;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 /* Custom, iPhone Retina */
@@ -117,6 +117,20 @@
 @media only screen and (min-width: 992px) {
   .search {
     display: none;
+  }
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .home__sidebar__container {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.25rem /* 4px */;
+    margin-right: 0.25rem /* 4px */;
+    flex-direction: column;
+    padding-left: 3rem;
   }
 }
 
