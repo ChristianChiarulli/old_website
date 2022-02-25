@@ -18,7 +18,6 @@ Husky is used to run a cache script on git commit. Caching is used for the searc
 
 ## TODO:
 
-- fix category page
 - deploy to vercel
 - donation page
 - contact page
