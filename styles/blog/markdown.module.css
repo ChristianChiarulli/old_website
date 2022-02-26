@@ -303,6 +303,8 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 2em;
+  /* TODO: fix nested bullets */
+	list-style-type: disc !important;
 }
 
 .markdown__body ol ol,
