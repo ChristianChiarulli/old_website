@@ -791,7 +791,7 @@
   padding: .2em .4em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(110,118,129,0.4);
+  background-color: #303443;
   border-radius: 6px;
 }
 
@@ -832,7 +832,7 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #374151;
+  background-color: #303443;
   border-radius: 6px;
 }
 
