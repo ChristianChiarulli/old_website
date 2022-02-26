@@ -20,7 +20,6 @@ export default function PostPage({
       <div className={styles.article}>
         <div className={styles.article__container}>
           <h1 className={styles.article__title}>{title}</h1>
-          <CategoryLabel>{topic}</CategoryLabel>
         </div>
         <img src={cover_image} alt='' className={styles.cover__image} />
 
@@ -38,7 +37,10 @@ export default function PostPage({
         <div className={markdownStyles.markdown__body}>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
-        <div className='date'>{date}</div>
+        <div className={styles.footer}>
+          <div className='date'>{date}</div>
+          <CategoryLabel>{topic}</CategoryLabel>
+        </div>
       </div>
     </Layout>
   )
