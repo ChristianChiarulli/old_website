@@ -11,14 +11,14 @@ export default function Post({ dropdown, post, compact }) {
 
   return (
     <div className={styles.container}>
-      <Link href={`/blog/${post.slug}`}>
+      <Link href={`/blog/category/${post.frontmatter.topic}/${post.slug}`}>
         <div
           style={{ paddingLeft: padding, paddingRight: padding }}
           className={styles.item}
         >
           <div className={styles.header}>
             <span className='date'>{post.frontmatter.date}</span>
-            <CategoryLabel>{post.frontmatter.category}</CategoryLabel>
+            <CategoryLabel>{post.frontmatter.topic}</CategoryLabel>
           </div>
           <div className={styles.title}>
             <a>{post.frontmatter.title}</a>
