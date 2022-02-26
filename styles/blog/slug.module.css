@@ -25,6 +25,16 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin: 2.8rem;
 }

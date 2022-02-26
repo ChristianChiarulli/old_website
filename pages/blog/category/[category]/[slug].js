@@ -7,6 +7,7 @@ import Layout from '@/components/Layout'
 import CategoryLabel from '@/components/CategoryLabel'
 import styles from '@/styles/blog/slug.module.css'
 import markdownStyles from '@/styles/blog/markdown.module.css'
+import { FaDiscord, FaGithub, FaHeart, FaPatreon, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 // TODO: style this markdown
 
@@ -39,6 +40,94 @@ export default function PostPage({
         </div>
         <div className={styles.footer}>
           <div className='date'>{date}</div>
+          <ul className={styles.socials}>
+            <li>
+              <a
+                className={styles.social__item}
+                target='_blank'
+                rel='nofollow noopener noreferrer'
+                href={'https://github.com/ChristianChiarulli'}
+              >
+                <FaGithub
+                  color='#FFFFFF'
+                  // color='#f34f29'
+                  size='30'
+                  style={{ marginRight: '.4rem' }}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                className={styles.social__item}
+                target='_blank'
+                rel='nofollow noopener noreferrer'
+                href={'https://www.youtube.com/chrisatmachine'}
+              >
+                <FaYoutube
+                  color='#FE0000'
+                  size='30'
+                  style={{ marginRight: '.4rem' }}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                className={styles.social__item}
+                target='_blank'
+                rel='nofollow noopener noreferrer'
+                href={'https://twitter.com/chrisatmachine'}
+              >
+                <FaTwitter
+                  color='#1c9bf0'
+                  size='30'
+                  style={{ marginRight: '.4rem' }}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                className={styles.social__item}
+                target='_blank'
+                rel='nofollow noopener noreferrer'
+                href={'https://discord.gg/Xb9B4Ny'}
+              >
+                <FaDiscord
+                  color='#7289dc'
+                  size='30'
+                  style={{ marginRight: '.4rem' }}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                className={styles.social__item}
+                target='_blank'
+                rel='nofollow noopener noreferrer'
+                href={'https://www.patreon.com/chrisatmachine'}
+              >
+                <FaPatreon
+                  color='#E8715C'
+                  size='30'
+                  style={{ marginRight: '.4rem' }}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                className={styles.social__item}
+                target='_blank'
+                rel='nofollow noopener noreferrer'
+                href={'https://github.com/sponsors/ChristianChiarulli'}
+              >
+                <FaHeart
+                  color='#EB48AB'
+                  size='30'
+                  style={{ marginRight: '.4rem' }}
+                />
+              </a>
+            </li>
+          </ul>
+
           <CategoryLabel>{topic}</CategoryLabel>
         </div>
       </div>
