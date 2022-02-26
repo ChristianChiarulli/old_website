@@ -46,10 +46,10 @@ export default function Search() {
   }, [isSearchResultsOpen])
 
   return (
-    <div className={styles.search__wrapper}>
+    <div ref={ref} className={styles.search__wrapper}>
       <div className={styles.search__container}>
         <div className={styles.search__input}>
-          <form ref={ref}>
+          <form >
             <input
               type='search'
               onClick={() => setIsSearchResultsOpen(true)}
