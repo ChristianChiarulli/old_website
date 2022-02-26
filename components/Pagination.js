@@ -1,11 +1,23 @@
 import Link from 'next/link'
 import styles from '@/styles/components/Pagination.module.css'
 
-export default function Pagination({ currentPage, numPages }) {
-  const isFirst = currentPage === 1
-  const isLast = currentPage === numPages
-  const prevPage = `/blog/page/${currentPage - 1}`
-  const nextPage = `/blog/page/${currentPage + 1}`
+export default function Pagination({ categoryName, currentPage, numPages }) {
+  let isFirst
+  let isLast
+  let prevPage
+  let nextPage
+
+  if (categoryName === undefined) {
+    isFirst = currentPage === 1
+    isLast = currentPage === numPages
+    prevPage = `/blog/page/${currentPage - 1}`
+    nextPage = `/blog/page/${currentPage + 1}`
+  } else {
+    isFirst = currentPage === 1
+    isLast = currentPage === numPages
+    prevPage = `/blog/category/${categoryName}/page/${currentPage - 1}`
+    nextPage = `/blog/category/${categoryName}/page/${currentPage + 1}`
+  }
 
   if (numPages === 1) return <></>
 
@@ -13,9 +25,7 @@ export default function Pagination({ currentPage, numPages }) {
     <ul className={styles.container}>
       {!isFirst && (
         <Link href={prevPage}>
-          <li className={styles.page__prev}>
-            Prev
-          </li>
+          <li className={styles.page__prev}>Prev</li>
         </Link>
       )}
       {/* TODO: cut middle pagination and put ... in middle after unreasonable amount of numbers */}
@@ -29,9 +39,7 @@ export default function Pagination({ currentPage, numPages }) {
 
       {!isLast && (
         <Link href={nextPage}>
-          <li className={styles.page__next}>
-            Next
-          </li>
+          <li className={styles.page__next}>Next</li>
         </Link>
       )}
     </ul>
