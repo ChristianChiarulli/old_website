@@ -5,6 +5,7 @@ import Post from '@/components/Post'
 import CategoryList from '@/components/CategoryList'
 import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
+import { POSTS_PER_PAGE } from '@/config/index'
 import styles from '@/styles/blog/category/category_name.module.css'
 import Pagination from '@/components/Pagination'
 
@@ -29,7 +30,11 @@ export default function CategoryBlogPage({
             ))}
           </div>
 
-          <Pagination currentPage={currentPage} numPages={numPages} />
+          <Pagination
+            categoryName={categoryName}
+            currentPage={currentPage}
+            numPages={numPages}
+          />
         </div>
         <div className={styles.sidebar__container}>
           <CategoryList title='ALL TOPICS' categories={categories} />
@@ -50,12 +55,34 @@ export async function getStaticPaths() {
 
     const { data: frontmatter } = matter(markdownWithMeta)
 
-    return frontmatter.category.toLowerCase()
+    return frontmatter.topic.toLowerCase()
   })
 
-  const paths = categories.map((category) => ({
-    params: { category_name: category },
-  }))
+  console.log(categories)
+
+  // const paths = categories.map((category) => ({
+  //   params: { category_name: category },
+  // }))
+
+  const uniqueCategories = [...new Set(categories)]
+
+  console.log(uniqueCategories)
+
+  let paths = []
+  uniqueCategories.forEach((category) => {
+    let posts_per_category = categories.filter(
+      (per_category) => per_category === category
+    ).length
+    console.log(posts_per_category)
+    const numPages = Math.ceil(posts_per_category / POSTS_PER_PAGE)
+    for (let i = 1; i <= numPages; i++) {
+      paths.push({
+        params: { category: category, category_page_index: i.toString() },
+      })
+    }
+  })
+
+  console.log('paths', paths)
 
   return {
     paths,
@@ -63,24 +90,39 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params: { category_name } }) {
-  const files = fs.readdirSync(path.join('posts'))
+export async function getStaticProps({ params }) {
+  const page = parseInt((params && params.category_page_index) || 1)
+
+  console.log(page)
 
   const posts = getPosts()
 
+  const files = fs.readdirSync(path.join('posts'))
+
   // Get categories for sidebar
-  const categories = posts.map((post) => post.frontmatter.category)
+  const categories = posts.map((post) => post.frontmatter.topic)
   const uniqueCategories = [...new Set(categories)]
 
+  const categoryName = params.category
+  console.log(categoryName)
   // Filter posts by category
   const categoryPosts = posts.filter(
-    (post) => post.frontmatter.category.toLowerCase() === category_name
+    (post) => post.frontmatter.topic.toLowerCase() === params.category
+  )
+
+  const numPages = Math.ceil(categoryPosts.length / POSTS_PER_PAGE)
+  const pageIndex = page - 1
+  const orderedPosts = categoryPosts.slice(
+    pageIndex * POSTS_PER_PAGE,
+    (pageIndex + 1) * POSTS_PER_PAGE
   )
 
   return {
     props: {
-      posts: categoryPosts,
-      categoryName: category_name,
+      posts: orderedPosts,
+      numPages,
+      currentPage: page,
+      categoryName,
       categories: uniqueCategories,
     },
   }

@@ -19,6 +19,8 @@ export default (req, res) => {
         'utf-8'
       )
 
+      console.log(markdownWithMeta)
+
       const { data: frontmatter } = matter(markdownWithMeta)
 
       return {
@@ -29,10 +31,10 @@ export default (req, res) => {
   }
 
   const results = posts.filter(
-    ({ frontmatter: { title, excerpt, category } }) =>
+    ({ frontmatter: { title, excerpt, topic } }) =>
       title.toLowerCase().indexOf(req.query.q) != -1 ||
-      excerpt.toLowerCase().indexOf(req.query.q) != -1 ||
-      category.toLowerCase().indexOf(req.query.q) != -1
+      // excerpt.toLowerCase().indexOf(req.query.q) != -1 ||
+      topic.toLowerCase().indexOf(req.query.q) != -1
   )
 
   res.status(200).json(JSON.stringify({ results }))

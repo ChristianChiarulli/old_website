@@ -49,6 +49,8 @@ export async function getStaticPaths() {
     })
   }
 
+  console.log('paths:', paths)
+
   return {
     paths,
     fallback: false,
@@ -63,7 +65,7 @@ export async function getStaticProps({ params }) {
   const posts = getPosts()
 
   // Get categories for sidebar
-  const categories = posts.map((post) => post.frontmatter.category)
+  const categories = posts.map((post) => post.frontmatter.topic)
   const uniqueCategories = [...new Set(categories)]
 
   const numPages = Math.ceil(files.length / POSTS_PER_PAGE)
