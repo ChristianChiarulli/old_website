@@ -13,15 +13,23 @@
   border-radius: 1rem;
 }
 
+.searchresults__count {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  /* margin-bottom: 0.75rem; */
+}
+
 .searchresults__container {
   padding: 0.75rem;
 }
 
-.searchresults__count {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  margin-bottom: 0.75rem;
+.posts {
+  overflow-y: auto;
+  max-height: 70vh;
 }
+
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
@@ -52,13 +60,13 @@
   }
 
   .searchresults__container {
-    padding: 0.75rem /* 12px */;
+    /* padding: 0.75rem; */
   }
 
   .searchresults__count {
     font-size: 1.5rem /* 24px */;
     line-height: 2rem /* 32px */;
-    margin-bottom: 0.75rem /* 12px */;
+    /* margin-bottom: 0.75rem; */
   }
 }
 
