@@ -42,95 +42,95 @@ export default function Header() {
               <a className={styles.menu__item}>Donate</a>
             </Link>
           </li>
-          <li>
-            <Link href='/contact'>
-              <a className={styles.menu__item}>Contact</a>
-            </Link>
-          </li>
+          {/* <li> */}
+          {/*   <Link href='/contact'> */}
+          {/*     <a className={styles.menu__item}>Contact</a> */}
+          {/*   </Link> */}
+          {/* </li> */}
         </ul>
         <ul className={styles.menu__socials}>
           <li>
             <a
-              className={styles.menu__social__item}
               target='_blank'
               rel='nofollow noopener noreferrer'
               href={'https://github.com/ChristianChiarulli'}
             >
               <FaGithub
+                className={styles.menu__social__item}
                 color='#FFFFFF'
                 // color='#f34f29'
                 size='30'
-                style={{ marginRight: '.4rem' }}
+                style={{margin:'.75rem'}}
               />
             </a>
           </li>
           <li>
             <a
-              className={styles.menu__social__item}
               target='_blank'
               rel='nofollow noopener noreferrer'
               href={'https://www.youtube.com/chrisatmachine'}
             >
               <FaYoutube
+                className={styles.menu__social__item}
                 color='#FE0000'
                 size='30'
-                style={{ marginRight: '.4rem' }}
+                style={{margin:'.75rem'}}
               />
             </a>
           </li>
           <li>
             <a
-              className={styles.menu__social__item}
               target='_blank'
               rel='nofollow noopener noreferrer'
               href={'https://twitter.com/chrisatmachine'}
             >
               <FaTwitter
+                className={styles.menu__social__item}
                 color='#1c9bf0'
                 size='30'
-                style={{ marginRight: '.4rem' }}
+                style={{margin:'.75rem'}}
               />
             </a>
           </li>
           <li>
             <a
-              className={styles.menu__social__item}
               target='_blank'
               rel='nofollow noopener noreferrer'
               href={'https://discord.gg/Xb9B4Ny'}
             >
               <FaDiscord
+                className={styles.menu__social__item}
                 color='#7289dc'
                 size='30'
-                style={{ marginRight: '.4rem' }}
+                style={{margin:'.75rem'}}
               />
             </a>
           </li>
           <li>
             <a
-              className={styles.menu__social__item}
               target='_blank'
               rel='nofollow noopener noreferrer'
               href={'https://www.patreon.com/chrisatmachine'}
             >
               <FaPatreon
+                className={styles.menu__social__item}
                 color='#E8715C'
                 size='30'
-                style={{ marginRight: '.4rem' }}
+                style={{margin:'.75rem'}}
               />
             </a>
           </li>
           <li>
             <a
-              className={styles.menu__social__item}
               target='_blank'
               rel='nofollow noopener noreferrer'
               href={'https://github.com/sponsors/ChristianChiarulli'}
             >
               <FaHeart
+                className={styles.menu__social__item}
                 color='#EB48AB'
                 size='30'
-                style={{ marginRight: '.4rem' }}
+                style={{margin:'.75rem'}}
               />
             </a>
           </li>
@@ -161,22 +161,22 @@ export default function Header() {
       {/*TODO: only show nav when bigger than 768px*/}
 
       {/* <div className='nav__wrapper'> */}
-          <nav className={styles.nav}>
-            <div className={styles.nav__items}>
-              <Link href='/blog'>
-                <a className={styles.nav__item}>Articles</a>
-              </Link>
-              <Link href='/donate'>
-                <a className={styles.nav__item}>Donate</a>
-              </Link>
-              <Link href='/contact'>
-                <a className={styles.nav__item}>Contact</a>
-              </Link>
-            </div>
-          </nav>
-        <div className={styles.nav__search}>
-          <Search />
+      <nav className={styles.nav}>
+        <div className={styles.nav__items}>
+          <Link href='/blog'>
+            <a className={styles.nav__item}>Articles</a>
+          </Link>
+          <Link href='/donate'>
+            <a className={styles.nav__item}>Donate</a>
+          </Link>
+          {/* <Link href='/contact'> */}
+          {/*   <a className={styles.nav__item}>Contact</a> */}
+          {/* </Link> */}
         </div>
+      </nav>
+      <div className={styles.nav__search}>
+        <Search />
+      </div>
       {/* </div> */}
     </header>
   )
