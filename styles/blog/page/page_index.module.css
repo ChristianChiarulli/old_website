@@ -22,7 +22,27 @@
 }
 
 .sidebar__container {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin: 2.8rem;
 }
 
 /* Custom, iPhone Retina */
@@ -62,6 +82,9 @@
     margin-right: 0.25rem /* 4px */;
     flex-direction: column;
     padding-left: 3rem;
+  }
+  .footer {
+    display: none;
   }
 }
 

@@ -29,9 +29,31 @@
   color: rgba(209, 213, 219, var(--tw-text-opacity));
   margin-left: 2rem;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .card span {
   --tw-text-opacity: 1;
   color: rgba(2, 213, 219, var(--tw-text-opacity));
+}
+
+.card span:hover {
+  --tw-text-opacity: 1;
+  color: rgba(165, 180, 252, var(--tw-text-opacity));
+}
+
+.card a span {
+  margin-left: 0.5rem;
+}
+
+.img_icon {
+  width: 2rem;
+  max-height: 2.8rem;
+  margin-right: 0.4rem;
+}
+
+.img_icon_paypal {
+  max-height: 2.8rem;
+  margin-right: 0.4rem;
 }
