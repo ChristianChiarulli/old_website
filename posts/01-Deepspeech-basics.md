@@ -4,7 +4,7 @@ description: description
 date: "2020-04-10"
 image: "mozilla-deepspeech.png"
 author: "Chris"
-topic: 'bitcoin'
+topic: 'reddit'
 ---
 
 ## What is Deepspeech

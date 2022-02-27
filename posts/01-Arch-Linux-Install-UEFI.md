@@ -4,7 +4,7 @@ description: description
 date: "2020-03-30"
 image: "arch-logo.png"
 author: "Chris"
-topic: 'bitcoin'
+topic: 'youtube'
 ---
 
 ## A Note about installing Arch Linux
@@ -21,7 +21,7 @@ If you are using a US layout then you're good no need to worry out this section 
 
 - First list your options:
 
-```
+```javascript
 ls /usr/share/kbd/keymaps/**/*.map.gz
 ```
 
