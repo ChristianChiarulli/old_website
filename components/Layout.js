@@ -9,6 +9,7 @@ export default function Layout({ title, keywords, description, children }) {
         <title>{title}</title>
         <meta name='keywords' content={keywords} />
         <meta name='description' content={description} />
+        <meta name='image' content={'/icons/chrisatmachine.png'} />
         <link rel='icon' href='/favicon.ico' />
         {/* <meta name='viewport' content='width=device-width, initial-scale=1.0' /> */}
       </Head>
