@@ -1,7 +1,7 @@
 ---
 title: Changing remote Git repo
 date: "2020-07-18"
-image: /images/git.png
+cover: "/images/git.png"
 topic: "git"
 excerpt: "How to change the remote github url of your repository."
 ---

@@ -12,7 +12,7 @@ import { FaDiscord, FaGithub, FaHeart, FaPatreon, FaTwitter, FaYoutube } from 'r
 // TODO: style this markdown
 
 export default function PostPage({
-  frontmatter: { title, topic, date, cover_image, author, author_image },
+  frontmatter: { title, topic, date, cover, author, author_image },
   content,
   slug,
 }) {
@@ -22,7 +22,7 @@ export default function PostPage({
         <div className={styles.article__container}>
           <h1 className={styles.article__title}>{title}</h1>
         </div>
-        <img src={cover_image} alt='' className={styles.cover__image} />
+        <img src={cover} alt='' className={styles.cover__image} />
 
         {/* <div className='flex text-gray-300 justify-between items-center bg-dark p-2 my-8'> */}
         {/* <div className='flex items-center'> */}
