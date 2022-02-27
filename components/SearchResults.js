@@ -1,7 +1,7 @@
 import Post from './Post'
 import styles from '@/styles/components/SearchResults.module.css'
 
-export default function SearchResults({ clicked, results }) {
+export default function SearchResults({ results }) {
   if (results.length === 0) return <></>
 
   return (
