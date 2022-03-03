@@ -8,5 +8,6 @@ export const COLOR_KEY = {
   ethereum: '#049669',
   PHP: '#7730db',
   Ruby: '#a70b34',
-  git: '#F05033'
+  git: '#F05033',
+  dwm: '#cacaca'
 }
