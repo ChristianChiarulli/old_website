@@ -6,7 +6,6 @@ cover: "/images/git.png"
 excerpt: "If you don't have push (write) access to an upstream repository, then you can pull commits from that repository into your own fork."
 ---
 
-
 This article is from Github's help page [here](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork) I am adding it here to quickly reference it when I inevitably forget how to do it.
 
 If you don't have push (write) access to an upstream repository, then you can pull commits from that repository into your own fork.
