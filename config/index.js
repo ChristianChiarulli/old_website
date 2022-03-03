@@ -9,5 +9,5 @@ export const COLOR_KEY = {
   PHP: '#7730db',
   Ruby: '#a70b34',
   git: '#F05033',
-  dwm: '#cacaca'
+  DWM: '#9a9a9a'
 }
