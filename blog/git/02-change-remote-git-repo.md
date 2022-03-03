@@ -18,6 +18,6 @@ git remote -v
 git remote set-url origin git@<your.git.repo.example.com>:<user>/<repository2.git>
 ```
 
-( **NOTE** )
+(**NOTE**)
 
 Replace everything inside `<>` with your data and remove the `<>` characters
