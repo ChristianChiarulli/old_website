@@ -6,7 +6,9 @@
 .cover__image {
   padding-top: 3rem;
   width: 100%;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
+  margin: auto;
+
 }
 
 .article__container {
