@@ -2,7 +2,7 @@
 title: Install Ledger Live for Linux
 date: '2022-03-08'
 topic: 'linux'
-cover: '/images/ledger-live.png'
+cover: '/images/ledger-live.jpg'
 author: 'Chris'
 excerpt: 'If you hold Bitcoin you should be keeping it offline in a hardware wallet like a Ledger. In this article I will show you how to install ledger-live for Linux.'
 ---
