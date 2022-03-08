@@ -21,13 +21,13 @@ excerpt: 'If you hold Bitcoin you should be keeping it offline in a hardware wal
 chmod +x ledger-live-*.AppImage
 ```
 
-4. Enter the following command to automatically add the udev rules and reload udev to allow USB access to your Ledger device:
+5. Enter the following command to automatically add the udev rules and reload udev to allow USB access to your Ledger device:
 
 ```
 wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
 ```
 
-5. Rename the application
+6. Rename the application
 
 ```
 mv ledger-live-*.AppImage ledger-live
@@ -35,15 +35,17 @@ mv ledger-live-*.AppImage ledger-live
 sudo mv ledger-live /usr/local/bin/
 ```
 
-6. Get the Icon
+7. Get the Icon
 
 ```
 sudo mkdir -p /usr/local/share/icons/
 
-wget -P TODO: my github link
+wget https://github.com/ChristianChiarulli/website/blob/master/blog/images/ledger-live.png
+
+sudo mv ledger-live.png /usr/local/share/icons/
 ```
 
-7. Add entry to desktop
+8. Add entry to desktop
 
 Create the following file `ledger-live.desktop`:
 
@@ -68,7 +70,7 @@ sudo mkdir -p /usr/local/share/applications/
 mv ledger-live.desktop /usr/local/share/applications
 ```
 
-8. Enjoy your ledger-live desktop app
+9. Take ownership of your Bitcoin
 
 ## References
 
