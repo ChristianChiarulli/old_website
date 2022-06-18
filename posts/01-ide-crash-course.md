@@ -76,7 +76,7 @@ The config structure is relatively simple
 
 - `lua/user/lsp/settings`: specific settings for your Language Server, to find more settings for your language server read more [here](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
-
+```
 .nvim/
 ├── init.lua
 ├── lua
@@ -111,6 +111,7 @@ The config structure is relatively simple
 │       ├── toggleterm.lua
 │       └── treesitter.lua
 └── README.md
+```
 
 ## Making Changes
 
