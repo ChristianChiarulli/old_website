@@ -10,6 +10,6 @@ export const COLOR_KEY = {
   PHP: '#7730db',
   Ruby: '#a70b34',
   git: '#F05033',
-  DWM: '#9a9a9a',
-  Neovim: '#54A23D'
+  dwm: '#6a6a6a',
+  neovim: '#54A23D'
 }
