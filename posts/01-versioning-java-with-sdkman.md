@@ -1,9 +1,8 @@
 ---
 title: Install Multiple Versions of Java with SDKMAN
 date: "2021-03-12"
+topic: "java"
 cover: "/images/sdkman.png"
-author: "Chris"
-tags: ["java"]
 excerpt: "SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits."
 ---
 
