@@ -11,5 +11,6 @@ export const COLOR_KEY = {
   Ruby: '#a70b34',
   git: '#F05033',
   dwm: '#6a6a6a',
-  neovim: '#54A23D'
+  neovim: '#54A23D',
+  java: '#EA2C31'
 }
