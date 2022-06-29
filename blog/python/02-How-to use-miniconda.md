@@ -1,5 +1,5 @@
 ---
-title: How to install Miniconda
+title: Managing Environments with Miniconda 
 date: "2019-06-25"
 topic: "python"
 cover: "/images/miniconda.jpg"

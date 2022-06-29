@@ -5,7 +5,7 @@ export const COLOR_KEY = {
   bitcoin: '#d97705',
   linux: '#1693d2',
   CSS: '#3929eb',
-  Python: '#049669',
+  python: '#386996',
   ethereum: '#049669',
   PHP: '#7730db',
   Ruby: '#a70b34',
