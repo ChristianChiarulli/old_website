@@ -3,7 +3,7 @@ title: How to install Miniconda
 date: "2019-06-25"
 topic: "python"
 cover: "/images/miniconda.jpg"
-excerpt: "A stable starting point for Neovim as an IDE"
+excerpt: "This guide will show you how to install the latest version of Miniconda. Miniconda is a lightweight version of Anaconda: a virtual environment manager for Python"
 ---
 
 This guide will show you how to install the latest version of Miniconda. Miniconda is a lightweight version of Anaconda: a virtual environment manager for Python.

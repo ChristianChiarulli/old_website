@@ -3,7 +3,7 @@ title: Managing Environments with Miniconda
 date: "2019-06-25"
 topic: "python"
 cover: "/images/miniconda.jpg"
-excerpt: "A stable starting point for Neovim as an IDE"
+excerpt: "The previous article explains how to properly install and configure Miniconda. This article will explain how to manage your environments"
 ---
 
 The previous article explains how to properly install and configure Miniconda. This article will explain how to manage your environments.
