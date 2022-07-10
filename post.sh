@@ -8,6 +8,8 @@ rm -rf tmp/
 # rm public/images/*
 cp blog/images/* public/images/
 
+npm run cache-posts
+
 git add .
 git commit -m "blog post"
 git push
