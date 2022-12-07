@@ -14,17 +14,17 @@ export default function HomePage({ posts }) {
     <Layout>
       <div className={styles.container}>
         <div className={styles.test}>
-          <div className={styles.introcard}>
-            <img
-              className={styles.intro__image}
-              src='/site/me.jpg'
-              alt='LunarVim'
-            />
-            <p className={styles.intro__message}>
-              I'm Chris, this is where I keep all of my thoughts and links to
-              everything I do on the internet.
-            </p>
-          </div>
+          {/* <div className={styles.introcard}> */}
+          {/*   <img */}
+          {/*     className={styles.intro__image} */}
+          {/*     src='/site/me.jpg' */}
+          {/*     alt='LunarVim' */}
+          {/*   /> */}
+          {/*   <p className={styles.intro__message}> */}
+          {/*     I'm Chris, this is where I keep all of my thoughts and links to */}
+          {/*     everything I do on the internet. */}
+          {/*   </p> */}
+          {/* </div> */}
           <div className={styles.search}>
             <Search />
           </div>
