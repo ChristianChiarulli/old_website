@@ -1,107 +1,66 @@
 import styles from '@/styles/components/ProjectList.module.css'
 
+const PROJECTS = [
+  {
+    title: "LunarVim",
+    href: "https://www.lunarvim.org/",
+    src: "/icons/lunarvim.png",
+  },
+  {
+    title: "Zap",
+    href: "https://www.zapzsh.org/",
+    src: "/icons/zap.svg",
+  },
+  {
+    title: "Neovim FS",
+    href: 'https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ',
+    src: "/icons/neovimN.png",
+  },
+  {
+    title: "Full Node Setup",
+    href: "https://github.com/ChristianChiarulli/Bitcoin-FullNode-Setup",
+    src: "/icons/bitcoin.png",
+  },
+  // {
+  //   title: "Crypto Zombies",
+  //   href: 'https://www.youtube.com/watch?v=ZZ5C2CILYhQ&list=PLhoH5vyxr6QoyW97O28uheczR07q9-OSl',
+  //   src: "/icons/crypto-zombie.png",
+  // },
+  // {
+  //   title: "FullStack ETH",
+  //   href: 'https://github.com/ChristianChiarulli/intro-fullstack-ethereum',
+  //   src: "/icons/circle-eth.png",
+  // },
+  // {
+  //   title: "MachOS",
+  //   href: 'https://github.com/Mach-OS',
+  //   src: "/icons/machos.png",
+  // },
+]
+
 export default function ProjectList() {
   return (
     <div className={styles.projectlist}>
       <h1 className={styles.projectlist__title}>PROJECTS</h1>
       <ul>
-        <li>
+        {PROJECTS.map(project => (
+        <li key={project.href}>
           <a
             className={styles.projectlist__item}
             target='_blank'
             rel='nofollow noopener noreferrer'
-            href={'https://www.lunarvim.org/'}
+            href={project.href}
           >
             <img
               className={styles.projectlist__icon}
-              src='/icons/lunarvim.png'
-              alt='LunarVim'
+              src={project.src}
+              alt={project.alt}
             />
-            <span className={styles.projectlist__name}>LunarVim</span>
+            <span className={styles.projectlist__name}>{project.title}</span>
           </a>
         </li>
+        ))}
         <li>
-          <a
-            className={styles.projectlist__item}
-            target='_blank'
-            rel='nofollow noopener noreferrer'
-            href={
-              'https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ'
-            }
-          >
-            <img
-              className={styles.projectlist__icon}
-              src='/icons/neovimN.png'
-              alt='LunarVim'
-            />
-            <span className={styles.projectlist__name}>Neovim FS</span>
-          </a>
-        </li>
-        <li>
-          <a
-            className={styles.projectlist__item}
-            target='_blank'
-            rel='nofollow noopener noreferrer'
-            href={
-              'https://github.com/ChristianChiarulli/Bitcoin-FullNode-Setup'
-            }
-          >
-            <img
-              className={styles.projectlist__icon}
-              src='/icons/bitcoin.png'
-              alt='LunarVim'
-            />
-            <span className={styles.projectlist__name}>Full Node Setup</span>
-          </a>
-        </li>
-        <li>
-          <a
-            className={styles.projectlist__item}
-            target='_blank'
-            rel='nofollow noopener noreferrer'
-            href={
-              'https://www.youtube.com/watch?v=ZZ5C2CILYhQ&list=PLhoH5vyxr6QoyW97O28uheczR07q9-OSl'
-            }
-          >
-            <img
-              className={styles.projectlist__icon}
-              src='/icons/crypto-zombie.png'
-              alt='LunarVim'
-            />
-            <span className={styles.projectlist__name}>Crypto Zombies</span>
-          </a>
-        </li>
-        <li>
-          <a
-            className={styles.projectlist__item}
-            target='_blank'
-            rel='nofollow noopener noreferrer'
-            href={
-              'https://github.com/ChristianChiarulli/intro-fullstack-ethereum'
-            }
-          >
-            <img
-              className={styles.projectlist__icon}
-              src='/icons/circle-eth.png'
-              alt='LunarVim'
-            />
-            <span className={styles.projectlist__name}>FullStack ETH</span>
-          </a>
-        </li>
-        <li>
-          <a
-            className={styles.projectlist__item}
-            target='_blank'
-            rel='nofollow noopener noreferrer'
-            href={'https://github.com/Mach-OS'}
-          >
-            <img
-              className={styles.projectlist__icon}
-              src='/icons/machos.png'
-              alt='LunarVim'
-            />
-            <span className={styles.projectlist__name}>MachOS</span>
-          </a>
         </li>
         {/* <li> */}
         {/*   <a */}
