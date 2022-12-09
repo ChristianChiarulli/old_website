@@ -3,15 +3,7 @@ import Search from './Search'
 import styles from '@/styles/components/Header.module.css'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { useState } from 'react'
-import {
-  FaCross,
-  FaDiscord,
-  FaGithub,
-  FaHeart,
-  FaPatreon,
-  FaTwitter,
-  FaYoutube,
-} from 'react-icons/fa'
+import SocialList from './SocialList'
 
 // TODO: responsive hamburger menu
 
@@ -48,93 +40,7 @@ export default function Header() {
           {/*   </Link> */}
           {/* </li> */}
         </ul>
-        <ul className={styles.menu__socials}>
-          <li>
-            <a
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://github.com/ChristianChiarulli'}
-            >
-              <FaGithub
-                className={styles.menu__social__item}
-                color='#FFFFFF'
-                // color='#f34f29'
-                size='30'
-                style={{margin:'.75rem'}}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://www.youtube.com/chrisatmachine'}
-            >
-              <FaYoutube
-                className={styles.menu__social__item}
-                color='#FE0000'
-                size='30'
-                style={{margin:'.75rem'}}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://twitter.com/chrisatmachine'}
-            >
-              <FaTwitter
-                className={styles.menu__social__item}
-                color='#1c9bf0'
-                size='30'
-                style={{margin:'.75rem'}}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://discord.gg/Xb9B4Ny'}
-            >
-              <FaDiscord
-                className={styles.menu__social__item}
-                color='#7289dc'
-                size='30'
-                style={{margin:'.75rem'}}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://www.patreon.com/chrisatmachine'}
-            >
-              <FaPatreon
-                className={styles.menu__social__item}
-                color='#E8715C'
-                size='30'
-                style={{margin:'.75rem'}}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://github.com/sponsors/ChristianChiarulli'}
-            >
-              <FaHeart
-                className={styles.menu__social__item}
-                color='#EB48AB'
-                size='30'
-                style={{margin:'.75rem'}}
-              />
-            </a>
-          </li>
-        </ul>
+        <SocialList iconsOnly />
       </div>
     )
   }

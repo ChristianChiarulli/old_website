@@ -49,9 +49,9 @@ const SOCIALS = [
   }
 ];
 
-export default function SocialList() {
+export default function SocialList({iconsOnly = false}) {
   return (
-    <div className={styles.sociallist}>
+    <div className={`${styles.sociallist} ${iconsOnly ? styles.iconsOnly : ""}`}>
       <h1 className={styles.sociallist__title}>SOCIAL</h1>
       <ul>
         {SOCIALS.map((social, idx) => (
