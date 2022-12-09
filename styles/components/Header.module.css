@@ -92,13 +92,6 @@
   /* text-decoration: underline; */
 }
 
-.menu__socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* flex-direction: column; */
-}
-
 .menu__social__item {
   margin: 2.8rem;
 }

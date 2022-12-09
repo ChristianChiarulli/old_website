@@ -41,6 +41,11 @@ const PROJECTS = [
   //   href: 'https://github.com/Mach-OS',
   //   src: "/icons/machos.png",
   // },
+  // {
+  //   title: "Website",
+  //   href: "https://github.com/ChristianChiarulli/website",
+  //   src: "/icons/chrisatmachine.png",
+  // }
 ]
 
 export default function ProjectList() {
@@ -48,8 +53,8 @@ export default function ProjectList() {
     <div className={styles.projectlist}>
       <h1 className={styles.projectlist__title}>PROJECTS</h1>
       <ul>
-        {PROJECTS.map(project => (
-        <li key={project.href}>
+        {PROJECTS.map((project, idx) => (
+        <li key={idx}>
           <a
             className={styles.projectlist__item}
             target='_blank'
@@ -65,23 +70,6 @@ export default function ProjectList() {
           </a>
         </li>
         ))}
-        <li>
-        </li>
-        {/* <li> */}
-        {/*   <a */}
-        {/*     className={styles.projectlist__item} */}
-        {/*     target='_blank' */}
-        {/*     rel='nofollow noopener noreferrer' */}
-        {/*     href={'https://github.com/ChristianChiarulli/website'} */}
-        {/*   > */}
-        {/*     <img */}
-        {/*       className={styles.projectlist__icon} */}
-        {/*       src='/icons/chrisatmachine.png' */}
-        {/*       alt='LunarVim' */}
-        {/*     /> */}
-        {/*     <span className={styles.projectlist__name}>Website</span> */}
-        {/*   </a> */}
-        {/* </li> */}
       </ul>
     </div>
   )

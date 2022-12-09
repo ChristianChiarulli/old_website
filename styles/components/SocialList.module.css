@@ -1,5 +1,6 @@
 .sociallist {
   width: 16rem /* 288px */;
+  margin-inline: auto;
 }
 
 .sociallist__title {
@@ -21,8 +22,8 @@
 }
 
 .sociallist__name {
-  font-size: 1.125rem/* 18px */;
-  line-height: 1.75rem/* 28px */;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
   --tw-text-opacity: 1;
   color: rgba(209, 213, 219, var(--tw-text-opacity));
   padding: 0.5rem;
@@ -34,4 +35,20 @@
   color: rgba(165, 180, 252, var(--tw-text-opacity));
 }
 
-
+/* Icons Only ( in Header ) */
+.sociallist.iconsOnly {
+  margin-top: 1rem;
+  width: 100%;
+}
+.sociallist.iconsOnly ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1.75rem;
+}
+.iconsOnly .sociallist__title,
+.iconsOnly .sociallist__name {
+  display: none;
+}
