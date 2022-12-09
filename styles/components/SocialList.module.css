@@ -37,12 +37,16 @@
 
 /* Icons Only ( in Header ) */
 .sociallist.iconsOnly {
-  width: auto;
   margin-top: 1rem;
+  width: 100%;
 }
 .sociallist.iconsOnly ul {
   display: flex;
-  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1.75rem;
 }
 .iconsOnly .sociallist__title,
 .iconsOnly .sociallist__name {

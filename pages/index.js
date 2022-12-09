@@ -7,7 +7,6 @@ import SocialList from '@/components/SocialList'
 import ProjectList from '@/components/ProjectList'
 import styles from '@/styles/home.module.css'
 import Search from '@/components/Search'
-import { FaDiscord, FaGithub, FaHeart, FaPatreon, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 export default function HomePage({ posts }) {
   return (
@@ -50,93 +49,7 @@ export default function HomePage({ posts }) {
         </div>
       </div>
       <div className={styles.footer}>
-        <ul className={styles.socials}>
-          <li>
-            <a
-              className={styles.social__item}
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://github.com/ChristianChiarulli'}
-            >
-              <FaGithub
-                color='#FFFFFF'
-                // color='#f34f29'
-                size='30'
-                style={{ marginRight: '.4rem' }}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              className={styles.social__item}
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://www.youtube.com/chrisatmachine'}
-            >
-              <FaYoutube
-                color='#FE0000'
-                size='30'
-                style={{ marginRight: '.4rem' }}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              className={styles.social__item}
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://twitter.com/chrisatmachine'}
-            >
-              <FaTwitter
-                color='#1c9bf0'
-                size='30'
-                style={{ marginRight: '.4rem' }}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              className={styles.social__item}
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://discord.gg/Xb9B4Ny'}
-            >
-              <FaDiscord
-                color='#7289dc'
-                size='30'
-                style={{ marginRight: '.4rem' }}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              className={styles.social__item}
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://www.patreon.com/chrisatmachine'}
-            >
-              <FaPatreon
-                color='#E8715C'
-                size='30'
-                style={{ marginRight: '.4rem' }}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              className={styles.social__item}
-              target='_blank'
-              rel='nofollow noopener noreferrer'
-              href={'https://github.com/sponsors/ChristianChiarulli'}
-            >
-              <FaHeart
-                color='#EB48AB'
-                size='30'
-                style={{ marginRight: '.4rem' }}
-              />
-            </a>
-          </li>
-        </ul>
+        <SocialList iconsOnly />
       </div>
     </Layout>
   )
