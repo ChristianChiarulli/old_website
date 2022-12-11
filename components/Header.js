@@ -31,7 +31,7 @@ export default function Header() {
           </li>
           <li>
             <Link href='/donate'>
-              <a className={styles.menu__item}>Donate</a>
+              <a className={`${styles.menu__item} ${styles.menu__button}`}>Donate</a>
             </Link>
           </li>
           {/* <li> */}
@@ -73,7 +73,7 @@ export default function Header() {
             <a className={styles.nav__item}>Articles</a>
           </Link>
           <Link href='/donate'>
-            <a className={styles.nav__item}>Donate</a>
+            <a className={`${styles.nav__button} ${styles.nav__item}`}>Donate</a>
           </Link>
           {/* <Link href='/contact'> */}
           {/*   <a className={styles.nav__item}>Contact</a> */}
