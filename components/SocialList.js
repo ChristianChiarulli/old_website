@@ -5,6 +5,8 @@ import {
   FaPatreon,
   FaTwitter,
   FaHeart,
+  FaTwitch,
+  FaMedium,
 } from "react-icons/fa";
 import styles from "@/styles/components/SocialList.module.css";
 
@@ -19,9 +21,15 @@ const SOCIALS = [
   },
   {
     title: "Youtube",
-    href: "https://www.youtube.com/chrisatmachine",
+    href: "https://www.youtube.com/@chrisatmachine",
     Icon: FaYoutube,
     clr: "#FE0000",
+  },
+  {
+    title: "Twitch",
+    href: "https://www.twitch.tv/chrisatmachine",
+    Icon: FaTwitch,
+    clr: "#6441A4",
   },
   {
     title: "Twitter",
@@ -31,7 +39,7 @@ const SOCIALS = [
   },
   {
     title: "Discord",
-    href: "https://discord.gg/Xb9B4Ny",
+    href: "https://discord.gg/machine-701530051140780102",
     Icon: FaDiscord,
     clr: "#7289dc",
   },
@@ -46,12 +54,20 @@ const SOCIALS = [
     href: "https://github.com/sponsors/ChristianChiarulli",
     Icon: FaHeart,
     clr: "#EB48AB",
-  }
+  },
+  {
+    title: "Medium",
+    href: "https://medium.com/@chris.machine",
+    Icon: FaMedium,
+    clr: "#FFFFFF",
+  },
 ];
 
-export default function SocialList({iconsOnly = false}) {
+export default function SocialList({ iconsOnly = false }) {
   return (
-    <div className={`${styles.sociallist} ${iconsOnly ? styles.iconsOnly : ""}`}>
+    <div
+      className={`${styles.sociallist} ${iconsOnly ? styles.iconsOnly : ""}`}
+    >
       <h1 className={styles.sociallist__title}>SOCIAL</h1>
       <ul>
         {SOCIALS.map((social, idx) => (

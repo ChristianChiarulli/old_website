@@ -1,6 +1,6 @@
 ---
 title: Install Ledger Live for Linux
-date: '2022-03-08'
+date: '2022-12-08'
 topic: 'linux'
 cover: '/images/ledger-live.jpg'
 author: 'Chris'

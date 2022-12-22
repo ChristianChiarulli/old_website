@@ -12,5 +12,6 @@ export const COLOR_KEY = {
   git: '#F05033',
   dwm: '#6a6a6a',
   neovim: '#54A23D',
-  java: '#EA2C31'
+  java: '#EA2C31',
+  macOS: '#67686d'
 }
