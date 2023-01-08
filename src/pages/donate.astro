@@ -1,0 +1,80 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import DonationLink from "../components/DonationLink.astro";
+const pageTitle = "Donate";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h1>Donate</h1>
+  <p>
+    If you have found my open source work useful, please consider making a
+    donation. All of the software I make, I give away for free. Your support is
+    greatly appreciated and helps me to continue developing and making content.
+  </p>
+
+  <div class="donation-links">
+    <DonationLink link={"asdf"} icon={"mdi:github"} name={"GH Sponsors"} />
+    <DonationLink link={"asdf"} icon={"mdi:paypal"} name={"PayPal"} />
+    <DonationLink link={"asdf"} icon={"mdi:venmo"} name={"Venmo"} />
+    <DonationLink
+      link={"asdf"}
+      icon={"simple-icons:cashapp"}
+      name={"CashApp"}
+    />
+    <DonationLink link={"asdf"} icon={"mdi:patreon"} name={"Patreon"} />
+    <DonationLink link={"asdf"} icon={"simple-icons:kofi"} name={"Ko-fi"} />
+    <DonationLink
+      link={"asdf"}
+      icon={"simple-icons:buymeacoffee"}
+      name={"BuyMeACoffee"}
+    />
+    <DonationLink
+      link={"asdf"}
+      icon={"bi:lightning-charge-fill"}
+      name={"Strike"}
+    />
+    <DonationLink link={"asdf"} icon={"mdi:youtube"} name={"YouTube"} />
+  </div>
+</BaseLayout>
+
+<style>
+  h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .donation-links {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: repeat(1, 1fr); */
+    justify-items: flex-start;
+    align-items: center;
+    width: 100%;
+    border-top: solid 1px #27272a;
+    gap: 1rem;
+  }
+
+  p {
+    color: #71717a;
+  }
+
+  a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .donation-links {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-items: center;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+</style>

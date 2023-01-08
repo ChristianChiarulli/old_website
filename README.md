@@ -1,34 +1,16 @@
 # chris@machine website
 
-## Usage
+This is my website created with astroJS.
 
-### Install Dependencies
-```bash
-npm install
-```
+## 🧞 Commands
 
-### Run Dev Server (http://localhost:3000) 
-```bash
-npm run dev
-```
+All commands are run from the root of the project, from a terminal:
 
-### Caching
-
-Husky is used to run a cache script on git commit. Caching is used for the search api route/serverless function
-
-## TODO:
-
-*high*
-- docs to generate blogs
-
-*medium*
-- add crypto to donation page
-- contact page
-- fix social link bigger than text container
-- fix search styling when deployed
-
-*low*
-- rename variables and files
-- cleanup code
-- improve code blocks in markdown (syntax highlighting and copy)
-- improve meta tags for other platforms
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm install`          | Installs dependencies                            |
+| `npm run dev`          | Starts local dev server at `localhost:3000`      |
+| `npm run build`        | Build your production site to `./dist/`          |
+| `npm run preview`      | Preview your build locally, before deploying     |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro --help` | Get help using the Astro CLI                     |
